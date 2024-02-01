@@ -22,7 +22,7 @@ public final class Main {
 
     private Main() {}
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         printWelcomeMessage();
         CliWrapper cliWrapper = new CliWrapper();
         CommandLine commandLine = null;
@@ -33,7 +33,7 @@ public final class Main {
             System.out.println(e.getMessage());
             System.exit(1);
         }
-
+    // test
         Configuration configuration = ConfigurationBuilder.initFromFile(commandLine.getOptionValue(CliOption.CONF.getCommandLineParam()));
         configuration.updateWithCliOptions(commandLine);
 
