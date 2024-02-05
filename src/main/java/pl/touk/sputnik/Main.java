@@ -33,7 +33,6 @@ public final class Main {
             System.out.println(e.getMessage());
             System.exit(1);
         }
-    // test
         Configuration configuration = ConfigurationBuilder.initFromFile(commandLine.getOptionValue(CliOption.CONF.getCommandLineParam()));
         configuration.updateWithCliOptions(commandLine);
 
