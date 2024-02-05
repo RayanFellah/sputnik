@@ -39,7 +39,7 @@ public final class Main {
         ConnectorFacade facade = getConnectorFacade(configuration);
         new Engine(facade, facade, configuration).run();
     }
-//
+
     private static ConnectorFacade getConnectorFacade(Configuration configuration) {
         ConnectorType connectorType = ConnectorType.getValidConnectorType(configuration.getProperty(GeneralOption.CONNECTOR_TYPE));
         ConnectorFacade facade = null;
