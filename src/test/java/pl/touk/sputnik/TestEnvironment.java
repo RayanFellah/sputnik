@@ -36,7 +36,7 @@ public abstract class TestEnvironment {
     protected Review nonExistentReview() {
         return new Review(ImmutableList.of(new ReviewFile("test")), formatter);
     }
-//
+
     protected Review nonExistentReview(String filename) {
         return new Review(ImmutableList.of(new ReviewFile(filename)), formatter);
     }
