@@ -32,7 +32,7 @@ public abstract class TestEnvironment {
     protected Review review(String filename) {
         return new Review(ImmutableList.of(new ReviewFile(Resources.getResource(filename).getFile())), formatter);
     }
-
+//
     protected Review nonExistentReview() {
         return new Review(ImmutableList.of(new ReviewFile("test")), formatter);
     }
