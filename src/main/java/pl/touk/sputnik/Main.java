@@ -21,7 +21,7 @@ public final class Main {
     private static final int WIDTH = 120;
 
     private Main() {}
-//
+
     public static void main (String[] args) {
         printWelcomeMessage();
         CliWrapper cliWrapper = new CliWrapper();
